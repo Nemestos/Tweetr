@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.btn {
+		@apply font-bold py-2 px-4 rounded bg-secondary;
+	}
+
+	.error {
+		@apply h-screen grid gap-32 place-content-center place-items-center bg-primary;
+	}
+	h1,
+	p,
+	a {
+		@apply text-white;
+	}
+
+	ul {
+		@apply grid gap-8 text-2xl;
+	}
+	li a {
+		@apply inline-flex items-center gap-16 p-5 rounded-md transition-all;
+	}
+
+	li.active {
+		@apply font-bold;
+	}
+	span {
+		@apply hidden;
+	}
+}
